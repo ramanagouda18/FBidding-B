@@ -7,6 +7,7 @@ const port = process.env.PORT || 3999
 const app = express()
 const path = require('path')
 const configureDB = require('./config/db')
+// app.use is for application level middleware
 app.use(cors())
 app.use(express.json())
 app.use((req, res, next) => {
